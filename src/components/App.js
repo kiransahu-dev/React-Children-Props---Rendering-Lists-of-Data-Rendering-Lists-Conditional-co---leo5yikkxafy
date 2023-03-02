@@ -3,13 +3,12 @@ import '../styles/App.css';
 import ChildComponent from './ChildComponent';
 const App = () => {
  //code here
+ let [square, setSquare] = useState(0);
 
   return (
     <div id="main">
-      <ChildComponent /> 
-       <input id='input' onChange={} />
-    
-      <p id='output'>{}</p>
+      <ChildComponent setSquare={setSquare} /> 
+      <p id='output'>{square}</p>
     </div>
   )
 }
